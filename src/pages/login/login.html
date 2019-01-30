@@ -1,0 +1,17 @@
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="loginObj.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="loginObj.password"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button full (click)="doLogin()">Login</button>
+
+  </ion-list>
+</ion-content>

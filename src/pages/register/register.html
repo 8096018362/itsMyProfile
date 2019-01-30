@@ -1,0 +1,29 @@
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="userObj.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="userObj.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Mobile</ion-label>
+      <ion-input type="text" [(ngModel)]="userObj.mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="userObj.password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Pincode</ion-label>
+      <ion-input type="text" [(ngModel)]="userObj.pincode"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button full (click)="doRegister()">Login</button>
+
+  </ion-list>
+</ion-content>
